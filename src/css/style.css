@@ -82,7 +82,7 @@ nav{
 
 .title__container2 img{
     margin-left: 850px;
-    margin-top: 100px;
+    margin-top: 20px;
 }
 
 .title__container2 p{
@@ -238,6 +238,7 @@ nav{
 
 .main_portfolio img{
     margin-top: 44px;
+    margin-bottom: 50px;
 }
 
 .main__portfolio2{
@@ -281,7 +282,36 @@ nav{
 
 .main_cost{
     margin-left: 500px;
-    margin-right: 500px;
+    margin-right: 490px;
+}
+
+.main_cost img{
+    margin-top: 38px;
+    margin-bottom: 27px;
+}
+
+.main_cost select{
+    height: 60px;
+    width: 890px;
+    background-color: #eeeeee;
+    padding: 23px 730px 20px 23px;
+    color: #737373;
+    font-weight: bold;
+    font-size: 13px;
+    
+}
+.cost_res{
+    float: left;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.cost_res2{
+    margin-left: 870px;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .main_cost h2{
@@ -298,6 +328,8 @@ nav{
     color: #263244;
     font-size: 25px;
     font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 25px;
     
 }
 
@@ -342,7 +374,8 @@ li.cup{
 }
 
 img.img_title{
-    margin: 30px 0px 0px 915px;
+    display: block;
+    margin: 30px auto;
 }
 
 img.img_title2{
