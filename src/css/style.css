@@ -8,6 +8,7 @@ nav{
     height:60px;
     background: #344051;
     position: fixed;
+    z-index: 10;
 }
 
 .logo{
@@ -469,20 +470,22 @@ li.cup{
 }
 
 .main_stats li{
-    animation: tada 1.4s;
+    -webkit-animation: tada 1.4s ease forwards;
+    -o-animation: tada 1.4s ease forwards;
+    animation: tada 1.4s ease forwards;
     animation-iteration-count: infinite;
 }
 
 .stats_background li:nth-child(2){
-    animation-delay: 0.4s;
+    animation-delay: 1s;
 }
 
 .stats_background li:nth-child(3){
-    animation-delay: 0.8s;
+    animation-delay: 2s;
 }
 
 .stats_background li:nth-child(4){
-    animation-delay: 1.2s;
+    animation-delay: 3s;
 }
 
 
