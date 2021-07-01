@@ -7,6 +7,7 @@ nav{
     width:100%;
     height:60px;
     background: #344051;
+    position: fixed;
 }
 
 .logo{
@@ -15,12 +16,16 @@ nav{
     line-height: 60px;
     padding-left: 388px;
     float: left;
+    -webkit-animation: comming 2s ease;
+    -o-animation: comming 2s ease;
+    animation: comming 2s ease;
     
 }
 
 .menu{
     float: left;
     padding-left: 432px;
+    
 }
 
 .menu li{
@@ -30,12 +35,48 @@ nav{
     margin-right: 40px;
     font-size: 16px;
     text-transform: uppercase;
-    
+    -webkit-animation: topshift 0.4s ease forwards;
+    -o-animation: topshift 0.4s ease forwards;
+    animation: topshift 0.4s ease forwards;
+    opacity: 0;
 }
+
+.menu li:nth-child(2){
+    animation-delay: 0.4s;
+}
+.menu li:nth-child(3){
+    animation-delay: 0.8s;
+}
+.menu li:nth-child(4){
+    animation-delay: 1.2s;
+}
+.menu li:nth-child(5){
+    animation-delay: 1.6s;
+}
+.menu li:nth-child(6){
+    animation-delay: 2s;
+}
+
+.menu li a{
+    color: white;
+    transition: all 0.1s;
+    transform: scale(1);
+    display: inline-block;
+}
+
+.menu li a:hover{ 
+    color: #db8755;
+}
+
+.menu li a:active{
+    transform: scale(1.3);
+}
+
+
 
 .main{
     width: 100%;
-    height: calc(100% - 60px);
+    height: 100%;
     background: url(../img/%D0%9F%D0%B0%D1%80%D0%B5%D0%BD%D1%8C.png) 90% 100%/auto 85% no-repeat , url(../img/%D1%84%D0%BE%D0%BD.jpg) center/cover no-repeat;
 }
 
@@ -44,6 +85,13 @@ nav{
     margin: 432px 0px 0px 404px;
     color: #2c384a;
     text-align: center;
+    -webkit-animation: titlemove 1s ease forwards;
+    -o-animation: titlemove 1s ease forwards;
+    animation: titlemove 1s ease forwards;
+    -webkit-animation-delay: 2.4s;
+    -o-animation-delay: 2.4s;
+    animation-delay: 2.4s;
+    opacity: 0;
 }
 
 .title__container h1{
@@ -67,10 +115,48 @@ nav{
     font-size: 13px;
     padding: 0px 16px;
     margin: 58px 14px 0px 14px;
+    transition: all 0.2s;
+    transform: scale(1);
     
     
 }
 
+.title__container input:active{
+    transform: scale(1.1);
+    color: white;
+    background: black;
+}
+
+@keyframes comming{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes topshift{
+    from{
+        opacity: 0;
+        margin-top: -80px;
+    }
+    to{
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+
+@keyframes titlemove{
+    from{
+        opacity: 0;
+        margin-left: -500px;
+    }
+    to{
+        opacity: 1;
+        margin-left: 404px;
+    }
+}
 
 .title__container2 h2{
     text-align: center;
@@ -81,8 +167,7 @@ nav{
 }
 
 .title__container2 img{
-    margin-left: 850px;
-    margin-top: 20px;
+    margin-left: 855px; 
 }
 
 .title__container2 p{
@@ -106,34 +191,34 @@ nav{
 
 .title__container3 h2{
     text-align: center;
-    padding-top: 106px;
+    padding-top: 80px;
     color: #263244;
     font-size: 33px;
     font-weight: bold;
 }
 
 .title__design{
-    margin-top: 131px;
+    margin-top: 50px;
     margin-left: 340px;
     float: left;
 }
 
 .title__develompent{
-    margin-top: 131px;
+    margin-top: 50px;
     float: left;
     margin-left: 80px;
 
 }
 
 .title__optimization{
-    margin-top: 131px;
+    margin-top: 50px;
     float: left;
     margin-left: 80px;
     
 }
 
 .title__marketing{
-    margin-top: 131px;
+    margin-top: 50px;
     float: left;
     margin-left: 80px;
     
@@ -167,6 +252,8 @@ nav{
     margin: 0 auto;
     display: block;
 }
+
+
 
 .title__develompent h6{
     margin-top: 30px;
@@ -232,14 +319,11 @@ nav{
 }
 
 .main_portfolio>p{
-    margin-top: 70px;
+    margin: 30px 0px 43px 0px;
     text-align: center;
 }
 
-.main_portfolio img{
-    margin-top: 44px;
-    margin-bottom: 50px;
-}
+
 
 .main__portfolio2{
     margin-left: 390px;
@@ -265,6 +349,17 @@ nav{
     padding: 0px 16px;
     margin-top: 25px;
     background-color: #63b5ae
+}
+
+.main__portfolio2 input:active{
+    transform: scale(1.1);
+    color: white;
+    background: black;
+}
+.title__container2 input:active{
+    transform: scale(1.1);
+    color: white;
+    background: black;
 }
 
 .main__portfolio3{
@@ -373,20 +468,43 @@ li.cup{
     float: left;
 }
 
+.main_stats li{
+    animation: tada 1.4s;
+    animation-iteration-count: infinite;
+}
+
+.stats_background li:nth-child(2){
+    animation-delay: 0.4s;
+}
+
+.stats_background li:nth-child(3){
+    animation-delay: 0.8s;
+}
+
+.stats_background li:nth-child(4){
+    animation-delay: 1.2s;
+}
+
+
+
+
 img.img_title{
     display: block;
     margin: 30px auto;
 }
 
 img.img_title2{
-    margin: 30px 0px 0px 915px;
+    margin: 30px auto;
+    display: block; 
 }
 
 img.img_title3{
-    margin: 30px 0px 0px 915px;
+    margin: 30px auto;
+    display: block; 
 }
 img.img_title4{
-    margin: 30px 0px 0px 915px;
+   margin: 30px auto;
+    display: block; 
 }
 
 .main_stats span{
@@ -397,6 +515,10 @@ img.img_title4{
     font-size: 25px;
     font-weight: bold;
     
+}
+
+.foto:hover{
+    transform: rotateX(50deg)
 }
 
 .main_stats li{
