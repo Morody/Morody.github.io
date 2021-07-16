@@ -1,34 +1,28 @@
-body{
-    padding: 50px;
+.block{
+    background: aliceblue;
+    margin: 250px;
+
 }
 
-.box{
-    height: 300px;
-    width: 300px;
-    border: 2px solid black;
-    background-color: azure;
-    animation-name: move;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
+.row{
+    background-color: darkcyan;
+    padding: 10px;
+    display: flex;
+    height: 500px;
+    
 }
 
-.box span{
-    display: block;
+.col{
+    background-color: chocolate;
+    padding: 5px;
+    border: 1px solid black;
+    font-size: 20px;
+    line-height: 200px;
     text-align: center;
-    margin-top: 90px;
     
+
 }
 
-@keyframes move{
-    0%{
-        background: red;
-    }
-    
-    10%{
-        background: blue;
-    }
-    
-    100%{
-        background: black;
-    }
+.col2{
+    align-items: flex-start;
 }
